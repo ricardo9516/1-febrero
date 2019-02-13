@@ -1,0 +1,21 @@
+var x=0;
+var vel=15;
+var vuelta=0;
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background(0);
+	fill(255,255,0);
+	ellipse(x,200,50,50);
+	if(x<400 && vuelta==0)
+	{
+		x=x+vel;
+		if (x>400) vuelta=1
+	}		
+		else 
+		{x=x-vel;
+		 if(x<0) vuelta=0;
+				}
+}
